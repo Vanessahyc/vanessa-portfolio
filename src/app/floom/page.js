@@ -14,7 +14,7 @@ export default function Floom() {
             <h2>Floom</h2>
             <h3>Packaging Design</h3>
             <h4>Rationale</h4>
-            <p>The Floom canned cocktail is designed to cater to a diverse and multilingual Canadian audience, particularly targeting young adults aged 25–40 who value quality, freshness, and natural ingredients in their beverages. This audience appreciates visually appealing and accessible products that align with their lifestyle, including casual gatherings, outdoor adventures, and celebratory moments. By focusing on bilingual labels and vibrant, nature-inspired designs, the product appeals to a wide demographic, including both English and French-speaking Canadians, ensuring inclusivity and a connection to the cultural diversity of the market.</p>
+            <p>The Floom canned cocktail is designed to cater to a diverse and multilingual Canadian audience, particularly targeting adults aged 19-30 who value quality, freshness, and natural ingredients in their beverages. This audience appreciates visually appealing and accessible products that align with their lifestyle, including casual gatherings, outdoor adventures, and celebratory moments. By focusing on bilingual labels and vibrant, nature-inspired designs, the product appeals to a wide demographic, including both English and French-speaking Canadians, ensuring inclusivity and a connection to the cultural diversity of the market.</p>
             <h4>Floom Flavor</h4>
             <div className={styles.flavorFilter}>
               <button>Guava</button>
