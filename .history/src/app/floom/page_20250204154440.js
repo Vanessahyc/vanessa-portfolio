@@ -43,26 +43,26 @@ export default function Floom() {
             <h4>Floom Flavor</h4>
             <div className={styles.flavorFilter}>
               <button
-                onClick={() => {setSelectedImage("/images/Guava_Mockup.jpg"); setSelectedDieline('/images/Guava_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg');}}
+                onClick={() => {setSelectedImage("/images/Guava_Mockup.jpg"); setSelectedDieline('/images/Guava_Dieline_New.png');}}
               >
                 Guava
               </button>
               <button
-                onClick={() => {setSelectedImage("/images/Orange_Mockup.jpg"); setSelectedDieline('/images/Orange_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg');}}
+                onClick={() => {setSelectedImage("/images/Orange_Mockup.jpg"); setSelectedDieline('/images/Orange_Dieline_New.png');}}
               >
                 Orange
               </button>
               <button
-                onClick={() => {setSelectedImage("/images/Mangosteen_Mockup.jpg"); setSelectedDieline('/images/Mangosteen_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg');}}
+                onClick={() => {setSelectedImage("/images/Mangosteen_Mockup.jpg"); setSelectedDieline('/images/Mangosteen_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg')}}
               >
                 Mangosteen
               </button>
             </div>
           </div>
         </section>
-        <section className={styles.packageContainer}>
-          <h3>Package Design</h3>
-          <div className={styles.packageDesign}>
+        <section>
+          <h3>Package Dieline</h3>
+          <div>
             <Image
                 src={selectedColor}
                 alt="Guava Can Design"

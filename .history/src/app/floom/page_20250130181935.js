@@ -3,14 +3,13 @@ import Header from "../../../components/Header";
 import styles from "@/app/floom/Floom.module.css";
 import Image from "next/image";
 import { useState } from "react";
-// import Carousel from "react-bootstrap/Carousel";
-// import { Carousel } from "react-responsive-carousel";
-// import Link from "next/link";
+import Carousel from "react-bootstrap/Carousel";
+import Link from "next/link";
 
 export default function Floom() {
-  const [selectedImage, setSelectedImage] = useState("/images/Guava_Mockup.jpg");
-  const [selectedDieline, setSelectedDieline] = useState('/images/Guava_Dieline_New.png');
-  const [selectedColor, setSelectedColor] = useState('/images/Guava_Color.svg');
+  const [selectedImage, setSelectedImage] = useState(
+    "/images/Guava_Mockup.jpg"
+  );
 
   return (
     <>
@@ -43,41 +42,64 @@ export default function Floom() {
             <h4>Floom Flavor</h4>
             <div className={styles.flavorFilter}>
               <button
-                onClick={() => {setSelectedImage("/images/Guava_Mockup.jpg"); setSelectedDieline('/images/Guava_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg');}}
+                onClick={() => setSelectedImage("/images/Guava_Mockup.jpg")}
               >
                 Guava
               </button>
               <button
-                onClick={() => {setSelectedImage("/images/Orange_Mockup.jpg"); setSelectedDieline('/images/Orange_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg');}}
+                onClick={() => setSelectedImage("/images/Orange_Mockup.jpg")}
               >
                 Orange
               </button>
               <button
-                onClick={() => {setSelectedImage("/images/Mangosteen_Mockup.jpg"); setSelectedDieline('/images/Mangosteen_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg');}}
+                onClick={() =>
+                  setSelectedImage("/images/Mangosteen_Mockup.jpg")
+                }
               >
                 Mangosteen
               </button>
             </div>
           </div>
         </section>
-        <section className={styles.packageContainer}>
-          <h3>Package Design</h3>
-          <div className={styles.packageDesign}>
-            <Image
-                src={selectedColor}
-                alt="Guava Can Design"
-                className={`${styles.mockup}`}
-                width={500}
-                height={400}
+        <section>
+          <h3>Package Dieline</h3>
+          <Carousel>
+            <Carousel.Item>
+            <img
+            src="/images/Guava_Dieline.png"
+            alt="Guava Can Design"
             />
-            <Image
-                src={selectedDieline}
-                alt="Guava Can Design"
-                className={`${styles.mockup}`}
-                width={500}
-                height={400}
+              <Carousel.Caption>
+                <h3>First slide label</h3>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+            <img
+            src="/images/Orange_Dieline.png"
+            alt="Guava Can Design"
             />
-          </div>
+              <Carousel.Caption>
+                <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+            <img
+            src="/images/Mangosteen_Dieline.png"
+            alt="Guava Can Design"
+            />
+              <Carousel.Caption>
+                <h3>Third slide label</h3>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl
+                  consectetur.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
         </section>
       </main>
     </>

@@ -61,7 +61,7 @@ export default function Floom() {
           </div>
         </section>
         <section className={styles.packageContainer}>
-          <h3>Package Design</h3>
+          <h3>Package Dieline</h3>
           <div className={styles.packageDesign}>
             <Image
                 src={selectedColor}

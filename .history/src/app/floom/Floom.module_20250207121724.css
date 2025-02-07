@@ -56,10 +56,6 @@
     background-color: #F2C43E;
 }
 
-.packageContainer {
-    margin-top: 3rem;
-}
-
 .packageDesign {
     display: flex;
     flex-direction: column;
