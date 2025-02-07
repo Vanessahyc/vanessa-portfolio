@@ -9,8 +9,7 @@ import { useState } from "react";
 
 export default function Floom() {
   const [selectedImage, setSelectedImage] = useState("/images/Guava_Mockup.jpg");
-  const [selectedDieline, setSelectedDieline] = useState('/images/Guava_Dieline_New.png');
-  const [selectedColor, setSelectedColor] = useState('/images/Guava_Color.svg');
+  const [selectedDieline, setSelectedDieline] = useState('/images/Guava_Dieline.svg');
 
   return (
     <>
@@ -43,33 +42,26 @@ export default function Floom() {
             <h4>Floom Flavor</h4>
             <div className={styles.flavorFilter}>
               <button
-                onClick={() => {setSelectedImage("/images/Guava_Mockup.jpg"); setSelectedDieline('/images/Guava_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg');}}
+                onClick={() => {setSelectedImage("/images/Guava_Mockup.jpg"); setSelectedDieline('/images/Guava_Dieline.png');}}
               >
                 Guava
               </button>
               <button
-                onClick={() => {setSelectedImage("/images/Orange_Mockup.jpg"); setSelectedDieline('/images/Orange_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg');}}
+                onClick={() => {setSelectedImage("/images/Orange_Mockup.jpg"); setSelectedDieline('/images/Orange_Dieline.png');}}
               >
                 Orange
               </button>
               <button
-                onClick={() => {setSelectedImage("/images/Mangosteen_Mockup.jpg"); setSelectedDieline('/images/Mangosteen_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg');}}
+                onClick={() => {setSelectedImage("/images/Mangosteen_Mockup.jpg"); setSelectedDieline('/images/Mangosteen_Dieline.png');}}
               >
                 Mangosteen
               </button>
             </div>
           </div>
         </section>
-        <section className={styles.packageContainer}>
-          <h3>Package Design</h3>
-          <div className={styles.packageDesign}>
-            <Image
-                src={selectedColor}
-                alt="Guava Can Design"
-                className={`${styles.mockup}`}
-                width={500}
-                height={400}
-            />
+        <section>
+          <h3>Package Dieline</h3>
+          <div>
             <Image
                 src={selectedDieline}
                 alt="Guava Can Design"

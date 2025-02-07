@@ -60,9 +60,9 @@ export default function Floom() {
             </div>
           </div>
         </section>
-        <section className={styles.packageContainer}>
-          <h3>Package Design</h3>
-          <div className={styles.packageDesign}>
+        <section>
+          <h3>Package Dieline</h3>
+          <div>
             <Image
                 src={selectedColor}
                 alt="Guava Can Design"
