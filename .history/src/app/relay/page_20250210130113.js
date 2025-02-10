@@ -117,12 +117,12 @@ export default function Relay() {
             <div className={styles.columnInfo}>
               <h3>Wireframes</h3>
             </div>
-            {/* <img
+            <img
               className={styles.workflowImg}
               src="/relay-images/wireframes.png"
               alt="placeholder image"
-            /> */}
-            <iframe className={styles.figma} src="https://embed.figma.com/design/OPBMn5qhrbRMRWUSj1J58Q/Relay-Main-Screen?node-id=0-1&embed-host=share" allowFullScreen></iframe>
+            />
+            <iframe className={styles.figma} src="https://embed.figma.com/design/OPBMn5qhrbRMRWUSj1J58Q/Relay-Main-Screen?node-id=0-1&embed-host=share" allowfullscreen></iframe>
           </div>
         </section>
         <section className={styles.brandSection}>
