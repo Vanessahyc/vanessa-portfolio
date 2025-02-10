@@ -1,0 +1,81 @@
+.mainContainer {
+    /* margin: 1em 2em; */
+    padding: 0 120px;
+}
+
+.projectSection {
+    display: flex;
+    align-items: center;
+}
+
+.projectSection img {
+    width: 60%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.projectInfo {
+    width: 40%;
+    padding: 2em;
+}
+
+.projectInfo h2 {
+    font-size: var(--font48px);
+    font-weight: var(--font-bold);
+    margin: 0;
+}
+
+.projectInfo h3 {
+    font-size: var(--font28px);
+    font-weight: var(--font-regular);
+    margin: 0;
+}
+
+.projectInfo h4 {
+    font-size: var(--font20px);
+    font-weight: var(--font-bold);
+}
+
+.projectInfo p {
+    font-size: var(--font16px);
+    font-weight: var(--font-regular);
+}
+
+.flexSection {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.leftBox {
+    width: 60%;
+    margin-right: 2rem;
+}
+
+.rightBox {
+    width: 40%;
+}
+
+.bg {
+    background-color: rgb(249, 187, 125, 80%);
+    border-radius: 25px;
+    padding: 1.5rem;
+}
+
+.subSection {
+    padding-top: 2rem;
+}
+
+.subContainer {
+    display: flex;
+    align-items: center;
+}
+
+.infoBox {
+    width: 45%;
+    margin-right: 2.5rem;
+}
+
+.persona {
+    width: 55%;
+    border-radius: 20px;
+}
