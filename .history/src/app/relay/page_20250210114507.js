@@ -1,7 +1,6 @@
 "use client";
 import Header from "../../../components/Header";
 import styles from "@/app/relay/Relay.module.css";
-import Link from "next/link";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -23,7 +22,7 @@ export default function Relay() {
             <p>
               Relay is Canada's first ridesharing app designed to assist busy working parents in organizing safe and reliable transportation for their children. The platform connects parents within a trusted community to facilitate efficient and eco-friendly ridesharing. The project aimed to address scheduling challenges while ensuring security, convenience, and ease of use for parents.
             </p>
-            <Link href="https://relay.arspera.com/">
+            <Link href="">
               <button className={styles.btn}>
                 Visit our blog
               </button>
@@ -35,7 +34,8 @@ export default function Relay() {
             <h3>Problem</h3>
             <p>
               With 75% of Canadian families with children aged 6–12 having two
-              working parents, struggle to balance work and their kids’ transportation needs due to limited reliable options.
+              working parents, the same percentage struggle to balance work and
+              their kids’ transportation needs due to limited reliable options.
             </p>
           </div>
           <div className={`${styles.rightBox} ${styles.bg}`}>
@@ -104,12 +104,11 @@ export default function Relay() {
                 Setting pages are the secondary concerns.
               </p>
             </div>
-            {/* <img
+            <img
               className={styles.workflowImg}
               src="/relay-images/workflow.png"
               alt="placeholder image"
-            /> */}
-            <iframe className={styles.figma} src="https://embed.figma.com/board/UQ8HVMw4achSHFZ8b8NcGr/Relay---App-Workflow?node-id=284-1439&embed-host=share" allowFullScreen></iframe>
+            />
           </div>
         </section>
         <section className={styles.subSection}>
