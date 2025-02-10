@@ -109,7 +109,7 @@ export default function Relay() {
               src="/relay-images/workflow.png"
               alt="placeholder image"
             /> */}
-            <iframe className={styles.figma} src="https://embed.figma.com/board/UQ8HVMw4achSHFZ8b8NcGr/Relay---App-Workflow?node-id=284-1439&embed-host=share" allowFullScreen></iframe>
+            <iframe src="https://embed.figma.com/board/UQ8HVMw4achSHFZ8b8NcGr/Relay---App-Workflow?node-id=284-1439&embed-host=share" allowFullScreen></iframe>
           </div>
         </section>
         <section className={styles.subSection}>
