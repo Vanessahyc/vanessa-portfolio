@@ -1,0 +1,232 @@
+.main-container {
+    padding: 0 8%;
+}
+
+.banner-section {
+    display: flex;
+    padding: 3.5em 0;
+    height: auto;
+    border-bottom: 1px solid #000;
+}
+
+.banner-img {
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.banner-info {
+    width: 50%;
+    padding: 2em 0 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*----Font Size and Weight----*/
+.banner-title h2 {
+    font-size: 48px;
+    font-weight: var(--font-bold);
+}
+
+.banner-title p {
+    font-size: 28px;
+    font-weight: var(--font-bold);
+}
+
+.banner-subtitle {
+    font-size: 24px;
+    font-weight: var(--font-regular);
+}
+
+.banner-overview h3 {
+    font-size: 28px;
+    font-weight: var(--font-bold);
+}
+
+/*----Content Section----*/
+.content-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4.6em;
+}
+
+.content-role {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #000;
+    padding-right: 130px;
+}
+
+.content-role h4 {
+    font-size: 24px;
+    font-weight: var(--font-bold);
+}
+
+.content-role p {
+    font-size: 18px;
+}
+
+.temp-img {
+    background-color: #f5674d;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 1em;
+}
+
+.content-box {
+    padding-left: 2.5em;
+}
+
+.content-list {
+    display: flex;
+}
+
+.content-list ul {
+    list-style: none;
+    padding-right: 2em;
+}
+
+/*----Section Container----*/
+.section-container {
+    display: flex;
+    margin-top: 2em;
+}
+
+.section-title {
+    min-width: 25%;
+}
+
+.d-flex {
+    display: flex;
+    margin-top: 3.5em;
+    align-items: stretch;
+    gap: 2em;
+}
+
+.box50 {
+    width: 50%;
+    display: flex;
+    border: 2px solid #F2A13E;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px 15px;
+    gap: 30px;
+}
+
+.box-right {
+    width: 80%;
+}
+
+.subSection {
+    margin-top: 3.5em;
+}
+
+.subContainer {
+    display: flex;
+    align-items: center;
+}
+
+.styleGuideImg {
+    width: 55%;
+    border-radius: 20px;
+}
+
+.infoBox {
+    border: 2px solid rgb(249, 187, 125, 0.282);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.personaBox {
+    display: flex;
+    gap: 2em;
+}
+
+.persona {
+    width: 50%;
+}
+
+.persona figcaption {
+    color: #f5674d;
+}
+
+.personaImg {
+    width: 100%;
+    border-radius: 20px;
+    padding-top: 1em;
+}
+
+.columnContainer {
+    background-color: rgb(249, 187, 125, 0.282);
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+.workflowImg {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid rgb(249, 187, 125, 0.282);
+}
+
+.workflowImg:hover {
+    border: 3px solid rgb(249, 187, 125);
+}
+
+.brandSection {
+    border: 2px solid rgb(249, 187, 125, 0.282);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 3.5em;
+    display: flex;
+    gap: 2em;
+}
+
+.figma {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.solution-box {
+    font-size: 8pt;
+}
+
+.font-s {
+    color: #f5674d;
+}
+
+/*----CTA Button----*/
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;   /* ~gap-4 */
+    padding-top: 0.5rem; /* ~pt-2 */
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;               
+    border: 1px solid #000;      
+    border-radius: 20px;    
+    padding: 0.5rem;      
+    text-decoration: none;   
+    color: #000;
+}
+
+.icon24 {
+    width: 24px !important; 
+    height: 24px !important; 
+    object-fit: contain;
+    display: inline-block;
+}
