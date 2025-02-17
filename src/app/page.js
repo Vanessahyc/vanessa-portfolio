@@ -14,6 +14,7 @@ export default function Home() {
             </p>
             <Link href="/floom">View Floom Project</Link>
             <Link href='/fitquest'>View Fitquest Project</Link>
+            <Link href='/relay'>View Relay Case Study</Link>
           </div>
         </section>
       </main>
