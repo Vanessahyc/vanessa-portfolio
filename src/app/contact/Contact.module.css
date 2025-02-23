@@ -1,0 +1,38 @@
+.main-container {
+    padding: 0 5%;
+    margin: 80px 0 50px;
+    height: 100vh;
+}
+
+.contact-container {
+    max-width: 500px;
+}
+
+.contact-container h1 {
+    font-size: 64px;
+    font-weight: var(--font-bold);
+    margin-bottom: 40px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    border: none;
+    border-bottom: 2px solid #000;
+    margin-bottom: 1rem;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;              
+    border: 1px solid #000;      
+    border-radius: 20px;    
+    padding: 0.5rem;      
+    text-decoration: none;   
+    color: #000;
+    background-color: transparent;
+}
