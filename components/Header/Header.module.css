@@ -1,8 +1,10 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    margin: 1em 2em;
+    margin-top: 2em;
+    padding: 0 5%;
 }
 
 .navbar ul {
@@ -13,7 +15,7 @@
 }
 
 .navbar li {
-    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .navbar a {
