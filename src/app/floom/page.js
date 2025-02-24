@@ -1,85 +1,31 @@
 "use client";
 import Header from "../../../components/Header";
 import styles from "@/app/floom/Floom.module.css";
-import Image from "next/image";
-import { useState } from "react";
-// import Carousel from "react-bootstrap/Carousel";
-// import { Carousel } from "react-responsive-carousel";
-// import Link from "next/link";
+import Footer from "../../../components/Footer";
+import HeroSection from "../../../components/HeroSection";
 
 export default function Floom() {
-  const [selectedImage, setSelectedImage] = useState("/images/Guava_Mockup.jpg");
-  const [selectedDieline, setSelectedDieline] = useState('/images/Guava_Dieline_New.png');
-  const [selectedColor, setSelectedColor] = useState('/images/Guava_Color.svg');
 
   return (
     <>
       <Header />
       <main className={styles.mainContainer}>
-        <section className={`${styles.projectSection}`}>
-          <Image
-            src={selectedImage}
-            alt="Guava Can Design"
-            className={`${styles.mockup}`}
-            width={5000}
-            height={4000}
-          />
-          <div className={styles.projectInfo}>
-            <h2>Floom</h2>
-            <h3>Packaging Design</h3>
-            <h4>Rationale</h4>
-            <p>
-              The Floom canned cocktail is designed to cater to a diverse and
-              multilingual Canadian audience, particularly targeting adults aged
-              19-30 who value quality, freshness, and natural ingredients in
-              their beverages. This audience appreciates visually appealing and
-              accessible products that align with their lifestyle, including
-              casual gatherings, outdoor adventures, and celebratory moments. By
-              focusing on bilingual labels and vibrant, nature-inspired designs,
-              the product appeals to a wide demographic, including both English
-              and French-speaking Canadians, ensuring inclusivity and a
-              connection to the cultural diversity of the market.
-            </p>
-            <h4>Floom Flavor</h4>
-            <div className={styles.flavorFilter}>
-              <button
-                onClick={() => {setSelectedImage("/images/Guava_Mockup.jpg"); setSelectedDieline('/images/Guava_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg');}}
-              >
-                Guava
-              </button>
-              <button
-                onClick={() => {setSelectedImage("/images/Orange_Mockup.jpg"); setSelectedDieline('/images/Orange_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg');}}
-              >
-                Orange
-              </button>
-              <button
-                onClick={() => {setSelectedImage("/images/Mangosteen_Mockup.jpg"); setSelectedDieline('/images/Mangosteen_Dieline_New.png'); setSelectedColor('/images/Guava_Color.svg');}}
-              >
-                Mangosteen
-              </button>
-            </div>
-          </div>
-        </section>
-        <section className={styles.packageContainer}>
-          <h3>Package Design</h3>
-          <div className={styles.packageDesign}>
-            <Image
-                src={selectedColor}
-                alt="Guava Can Design"
-                className={`${styles.mockup}`}
-                width={500}
-                height={400}
-            />
-            <Image
-                src={selectedDieline}
-                alt="Guava Can Design"
-                className={`${styles.mockup}`}
-                width={500}
-                height={400}
-            />
-          </div>
+        <HeroSection
+          imageSrc="/floom-images/floom_flavors_mockup.webp"
+          imageAlt="floom flavors mockup"
+          title="Floom"
+          year="2024"
+          subtitle="Graphic Design | Packaging Design"
+          overviewTitle="Overview"
+          overviewText="The Floom canned cocktail is designed to cater to a diverse and multilingual Canadian audience, particularly targeting adults aged 19-30 who value quality, freshness, and natural ingredients in their beverages. This audience appreciates visually appealing and accessible products that align with their lifestyle, including casual gatherings, outdoor adventures, and celebratory moments. By focusing on bilingual labels and vibrant, nature-inspired designs, the product appeals to a wide demographic, including both English and French-speaking Canadians, ensuring inclusivity and a connection to the cultural diversity of the market."
+        />
+        <section className={styles["dieline-container"]}>
+          <img src="/floom-images/guava.webp" alt="Guava Dieline" />
+          <img src="/floom-images/mangosteen.webp" alt="Mangosteen Dieline" />
+          <img src="/floom-images/orange.webp" alt="Orange Dieline" />
         </section>
       </main>
+      <Footer />
     </>
   );
 }
