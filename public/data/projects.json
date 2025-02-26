@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "href": "/floom",
+    "imgSrc": "/floom-images/floom_flavors_mockup.webp",
+    "altText": "Floom packaging design",
+    "title": "Floom",
+    "width": 1500,
+    "height": 1000,
+    "year": 2024,
+    "month": 11,
+    "tags": ["Graphic Design", "Packaging Design"],
+    "category": "Graphic Design"
+  },
+  {
+    "id": 2,
+    "href": "/fitquest",
+    "imgSrc": "/fitquest-images/fitquest_hero_mockup.webp",
+    "altText": "FitQuest Web App",
+    "width": 1500,
+    "height": 700,
+    "title": "FitQuest",
+    "year": 2024,
+    "month": 5,
+    "tags": ["UI/UX Design", "Web App"],
+    "category": ["Development", "UI/UX Design"]
+  },
+  {
+    "id": 3,
+    "href": "/relay",
+    "imgSrc": "/relay-images/relay_hero_image.png",
+    "altText": "Relay App Development",
+    "width": 1500,
+    "height": 700,
+    "title": "Relay",
+    "year": 2024,
+    "month": 12,
+    "tags": ["UI/UX Design", "App Development", "Case Study"],
+    "category": ["Development", "UI/UX Design"]
+  },
+  {
+    "id": 4,
+    "href": "/ecospace",
+    "imgSrc": "/ecospace-images/ecospace_hero_mockup.webp",
+    "altText": "Eco Space Magazine Design",
+    "width": 1500,
+    "height": 1000,
+    "title": "Eco Space",
+    "year": 2024,
+    "month": 11,
+    "tags": ["Content Design", "Graphic Design"],
+    "category": "Graphic Design"
+
+  },
+  {
+    "id": 5,
+    "href": "/opalorchid",
+    "imgSrc": "/images/img_placeholder.jpg",
+    "altText": "Opal Orchid Menu Design",
+    "width": 1500,
+    "height": 1143,
+    "title": "Opal Orchid",
+    "year": 2024,
+    "month": 5,
+    "tags": ["Graphic Design","Product Design"],
+    "category": "Graphic Design"
+  },
+  {
+    "id": 6,
+    "href": "/ecommerce",
+    "imgSrc": "/images/img_placeholder.jpg",
+    "altText": "E-Commerce Video",
+    "width": 1500,
+    "height": 1143,
+    "title": "Live Steam Shopping",
+    "year": 2024,
+    "month": 5,
+    "tags": ["After Effect", "Graphic Design"],
+    "category": "Motion Graphics"
+  },
+  {
+    "id": 7,
+    "href": "/mechobject",
+    "imgSrc": "/images/img_placeholder.jpg",
+    "altText": "Mechanical Object",
+    "width": 1500,
+    "height": 1143,
+    "title": "Mechanical Object",
+    "year": 2023,
+    "month": 11,
+    "tags": ["Graphic Design", "Illustrator"],
+    "category": "Graphic Design"
+  }
+]
