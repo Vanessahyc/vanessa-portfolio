@@ -1,0 +1,60 @@
+.project-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.project-box-small {
+  display: flex;
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+  height: 470px;
+  margin-bottom: 1rem;
+}
+
+.project-infobox-b {
+  width: 50%;
+}
+
+.project-imgbox {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-imgbox img {
+  width: 100%;
+  height: auto; /* Keeps aspect ratio */
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 400ms;
+}
+
+.project-tagbox-b {
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-tagbox-b p {
+  font-size: 14px;
+  font-weight: var(--font-regular);
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
+  background: rgba(106, 136, 177, 0.2);
+}
+
+.project-name h3 {
+    font-size: var(--font32px);
+    font-weight: var(--font-bold);
+    margin: 0;
+  }
+  
+  .project-name p {
+    margin: 0;
+    font-size: var(--font20px);
+    font-weight: var(--font-bold);
+  }

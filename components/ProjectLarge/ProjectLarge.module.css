@@ -1,0 +1,75 @@
+.project-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.project-box-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: 1rem auto;
+  border-radius: 15px;
+  height: 550px;
+}
+
+.project-box-big img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-box-big:hover img {
+  transform: scale(1.2); /* Slightly enlarges the image */
+}
+
+.project-infobox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  z-index: 2;
+}
+
+.project-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-infobox {
+  padding: 2rem;
+}
+
+.project-name h3 {
+  font-size: var(--font32px);
+  font-weight: var(--font-bold);
+  margin: 0;
+}
+
+.project-name p {
+  margin: 0;
+  font-size: var(--font20px);
+  font-weight: var(--font-bold);
+}
+
+.project-tagbox-b {
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-tagbox-b p {
+  font-size: 14px;
+  font-weight: var(--font-regular);
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
+  background: rgba(106, 136, 177, 0.2);
+}
