@@ -1,9 +1,39 @@
+"use client";
+import { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import styles from "@/app/Home.module.css";
 import Link from "next/link";
 import Footer from "../../components/Footer";
+import ProjectMedium from "../../components/ProjectMedium";
+import ProjectLarge from "../../components/ProjectLarge";
 
 export default function Home() {
+  const [projectsData, setProjectsData] = useState([]);
+  const [projects2024, setProjects2024] = useState([]);
+  const [projects2023, setProjects2023] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/projects.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const sortedProjects = [...data].sort((a, b) => {
+          if (b.year !== a.year) {
+            return b.year - a.year;
+          }
+          return b.month - a.month;
+        });
+
+        setProjectsData(sortedProjects);
+        setProjects2024(
+          sortedProjects.filter((project) => project.year === 2024)
+        );
+        setProjects2023(
+          sortedProjects.filter((project) => project.year === 2023)
+        );
+      })
+      .catch((error) => console.error("Error loading projects", error));
+  }, []);
+
   return (
     <>
       <Header />
@@ -26,87 +56,13 @@ export default function Home() {
           <section id="projects" className={`${styles["projects-section"]}`}>
             <h2 className={styles["section-title"]}>Recent Projects</h2>
             <div className={styles["projects-container"]}>
-              <Link href="/floom" className={styles["project-link"]}>
-                <div className={`${styles["project-box-big"]}`}>
-                  <img
-                    src="/floom-images/floom_mockup.jpg"
-                    alt="floom packaging design"
-                  />
-                  <div className={styles["project-overlay"]}></div>
-                  <div className={styles["project-infobox"]}>
-                    <div className={styles["project-name"]}>
-                      <h3>Floom</h3>
-                      <p>2024</p>
-                    </div>
-                    <div className={styles["project-tagbox"]}>
-                      <p>Graphic Design</p>
-                      <p>Packaging Design</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+              {projects2024.length > 0 && (
+                <ProjectLarge key={projects2024[0].id} {...projects2024[0]} />
+              )}
               <div className={styles["project-small-section"]}>
-                <Link href="/relay" className={styles["project-link"]}>
-                  <div className={styles["project-box-small"]}>
-                    <div className={styles["project-infobox-b"]}>
-                      <div className={styles["project-name"]}>
-                        <h3>Relay</h3>
-                        <p>2024</p>
-                      </div>
-                      <div className={styles["project-tagbox-b"]}>
-                        <p>UI/UX Design</p>
-                        <p>App Development</p>
-                        <p>Case Study</p>
-                      </div>
-                    </div>
-                    <div className={styles["project-imgbox"]}>
-                      <img
-                        src="/relay-images/home_mockup@1.5x.png"
-                        alt="Relay App Development"
-                      />
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/fitquest" className={styles["project-link"]}>
-                  <div className={styles["project-box-small"]}>
-                    <div className={styles["project-infobox-b"]}>
-                      <div className={styles["project-name"]}>
-                        <h3>FitQuest</h3>
-                        <p>2024</p>
-                      </div>
-                      <div className={styles["project-tagbox-b"]}>
-                        <p>UI/UX Design</p>
-                        <p>App Development</p>
-                      </div>
-                    </div>
-                    <div className={styles["project-imgbox"]}>
-                      <img
-                        src="/images/fitquest.png"
-                        alt="FitQuest Web App Development"
-                      />
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/ecospace" className={styles["project-link"]}>
-                  <div className={styles["project-box-small"]}>
-                    <div className={styles["project-infobox-b"]}>
-                      <div className={styles["project-name"]}>
-                        <h3>Eco Space</h3>
-                        <p>2024</p>
-                      </div>
-                      <div className={styles["project-tagbox-b"]}>
-                        <p>Content Design</p>
-                        <p>Graphic Design</p>
-                      </div>
-                    </div>
-                    <div className={styles["project-imgbox"]}>
-                      <img
-                        src="/ecospace-images/ecospace_mockup.jpg"
-                        alt="Eco Space Magazine Design"
-                      />
-                    </div>
-                  </div>
-                </Link>
+                {projects2024.slice(1, 4).map((project) => (
+                  <ProjectMedium key={project.id} {...project} />
+                ))}
               </div>
             </div>
           </section>

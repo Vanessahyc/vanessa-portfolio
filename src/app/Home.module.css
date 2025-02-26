@@ -52,29 +52,25 @@
 }
 
 .project-box-big {
-  position: relative; /* Allows the overlay to be absolutely positioned */
-  overflow: hidden; /* If you want to hide any overflowing content */ /* Adjust as needed */
-  margin: 1rem auto; /* Center and spacing */
-  border-radius: 5px; /* Optional for rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  overflow: hidden; 
+  margin: 1rem auto;
+  border-radius: 15px;
   height: 550px;
 }
-
-/* .project-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  border-radius: 8px;
-  background: rgba(0, 0, 0, 0.4);
-  object-fit: cover;
-} */
 
 .project-box-big img {
   display: block;
   width: 100%;
   height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-box-big:hover img {
+  transform: scale(1.2); /* Slightly enlarges the image */
 }
 
 /* Overlay container */
@@ -84,7 +80,7 @@
   left: 0;
   right: 0;
 
-  padding: 1rem; /* Spacing inside the overlay */
+  padding: 1rem; 
   display: flex;
   flex-direction: column;
   color: #000;
@@ -201,7 +197,7 @@
   display: flex;
   border-top: 1px solid #000;
   padding-top: 1rem;
-  height: 330px;
+  height: 470px;
   margin-bottom: 1rem;
 }
 
@@ -212,14 +208,18 @@
 .project-imgbox {
   width: 50%;
   height: auto;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-imgbox img {
   width: 100%;
-  height: 300px;
+  height: auto; /* Keeps aspect ratio */
+  max-height: 100%;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 15px;
+  transition: transform 400ms;
 }
 
 .project-tagbox-b {
@@ -234,5 +234,5 @@
   font-weight: var(--font-regular);
   padding: 0.25rem 0.5rem;
   border-radius: 20px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(106, 136, 177, 0.2);
 }
