@@ -1,12 +1,11 @@
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columns: left and right */
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  background-color: #06255b; /* Light gray; adjust as needed */
+  background-color: #06255b;
   padding: 3rem;
 }
 
-/* Left column with the large heading */
 .left {
   display: flex;
   flex-direction: column;
@@ -28,6 +27,7 @@
   position: relative;
   left: 8.8rem;
   color: #6a88b1;
+  z-index: 1;
 }
 
 .touch {
@@ -38,7 +38,6 @@
   color: #fff;
 }
 
-/* Right column example: each link row has a bottom border and an arrow on the right */
 .right {
   display: flex;
   flex-direction: column;
@@ -59,9 +58,11 @@
   color: #fff;
   font-size: 1.2rem;
   font-weight: 500;
+  z-index: 2;
 }
 
 .arrow {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
+  color: #fff;
 }
