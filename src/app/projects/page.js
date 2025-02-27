@@ -14,18 +14,16 @@ export default function Projects() {
     fetch("/data/projects.json")
       .then((res) => res.json())
       .then((data) => {
-
         const sortedProjects = data.sort((a, b) => {
           if (b.year !== a.year) return b.year - a.year;
           return b.month - a.month;
         });
 
         setProjects(sortedProjects);
-        setFilteredProjects(sortedProjects); 
+        setFilteredProjects(sortedProjects);
       })
       .catch((error) => console.error("Error loading projects:", error));
   }, []);
-
 
   const handleFilterChange = (category) => {
     setSelectedFilter(category);
@@ -49,7 +47,7 @@ export default function Projects() {
       <Header />
       <main className={styles["main-container"]}>
         <section id="projects" className={styles["projects-section"]}>
-          <h2 className={styles["section-title"]}>Recent Projects</h2>
+          <h2 className={styles["section-title"]}>Projects</h2>
           <div className={styles["filter-container"]}>
             {[
               "All",
