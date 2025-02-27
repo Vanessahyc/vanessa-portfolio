@@ -1,11 +1,14 @@
 import Button from "../Button";
 import styles from "./HeroSection.module.css";
+import Image from "next/image";
 import FilterButton from "../FilterButton";
 import { useState } from "react";
 
 export default function HeroSection({
   imageSrc,
   imageAlt,
+  width,
+  height,
   title,
   year,
   subtitle,
@@ -17,7 +20,7 @@ export default function HeroSection({
 
   return (
     <section className={styles["hero-section"]}>
-      <img className={styles["hero-img"]} src={imageSrc} alt={imageAlt} />
+      <Image className={styles["hero-img"]} src={imageSrc} alt={imageAlt} width={width} height={height} />
       <div className={styles["hero-info"]}>
         <div className={styles["hero-header"]}>
           <div className={styles["hero-title"]}>
