@@ -1,0 +1,15 @@
+.mainContainer {
+  padding: 0 5%;
+  margin: 1rem 0 3rem;
+}
+
+.dieline-container {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.dieline-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

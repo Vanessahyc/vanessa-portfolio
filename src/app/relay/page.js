@@ -375,15 +375,8 @@ export default function Relay() {
           <div className={styles["section-title"]}>
             <h3>Promotional Video</h3>
           </div>
-          <div className={styles["section-content"]}>
-            <iframe
-              className={styles.figma}
-              src="https://www.youtube.com/embed/iqs0Pss_1fc?si=EPphv7Y1iCxDHmS_"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+          <div className={styles["video-content"]}>
+          <iframe className={styles["responsive-iframe"]} width="560" height="315" src="https://www.youtube.com/embed/iqs0Pss_1fc?si=bCj3T7IWfT2ggM5E" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
         </section>
       </main>

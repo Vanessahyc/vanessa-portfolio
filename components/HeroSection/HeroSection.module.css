@@ -11,6 +11,7 @@
     width: 50%;
     object-fit: cover;
     border-radius: 15px;
+    height: 75vh;
 }
 
 .hero-info {
@@ -46,4 +47,8 @@
 .hero-overview h3 {
     font-size: 28px;
     font-weight: var(--font-bold);
+}
+
+.hero-overview p {
+    margin: 0;
 }
