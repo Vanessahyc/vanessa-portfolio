@@ -1,45 +1,71 @@
 .mainContainer {
-    margin: 1em 2em;
+  padding: 0 5%;
+  margin: 1rem 0 3rem;
 }
 
-.projectSection {
-    display: flex;
-    align-items: center;
+/*----Section Container----*/
+.section-container {
+  display: flex;
+  margin-top: 4em;
 }
 
-.projectSection img {
-    width: 60%;
-    height: 100%;
-    border-radius: 20px;
+.section-title {
+  min-width: 25%;
 }
 
-.projectInfo {
-    width: 40%;
-    padding: 2em;
+.section-title h3 {
+  font-size: 28px;
+  font-weight: var(--font-bold);
 }
 
-.projectInfo h2 {
-    font-size: var(--font48px);
-    font-weight: var(--font-bold);
-    margin: 0;
+.figma {
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
 }
 
-.projectInfo h3 {
-    font-size: var(--font28px);
-    font-weight: var(--font-regular);
-    margin: 0;
+.d-flex {
+  display: flex;
+  align-items: stretch;
+  gap: 1em;
+  margin-bottom: 1rem;
 }
 
-.projectInfo h4 {
-    font-size: var(--font20px);
-    font-weight: var(--font-bold);
+.width50 {
+  width: 50%;
 }
 
-.projectInfo p {
-    font-size: var(--font16px);
-    font-weight: var(--font-regular);
+.box-right {
+  width: 80%;
 }
 
-.persona {
-    border-radius: 20px;
+.box-right h4 {
+  font-size: 20px;
+  font-weight: var(--font-bold);
+}
+
+.personaImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 15px;
 }
