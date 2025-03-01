@@ -77,18 +77,5 @@
     "month": 5,
     "tags": ["After Effect", "Graphic Design"],
     "category": "Motion Graphics"
-  },
-  {
-    "id": 7,
-    "href": "/mechobject",
-    "imgSrc": "/images/img_placeholder.jpg",
-    "altText": "Mechanical Object",
-    "width": 1500,
-    "height": 1143,
-    "title": "Mechanical Object",
-    "year": 2023,
-    "month": 11,
-    "tags": ["Graphic Design", "Illustrator"],
-    "category": "Graphic Design"
   }
 ]
