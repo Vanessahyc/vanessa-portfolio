@@ -1,0 +1,33 @@
+.main-container {
+    padding: 0 5%;
+  }
+  /*----Greeting Section Styling----*/
+  .greeting-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .greeting-big {
+    font-size: 58px;
+    font-weight: var(--font-bold);
+  }
+  
+  .greeting-small {
+    font-size: 32px;
+  }
+  
+  .greeting-bottom {
+    z-index: 1;
+    display: inline-flex !important;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #000;
+    scroll-behavior: smooth;
+  }
+  
