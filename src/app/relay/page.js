@@ -50,7 +50,7 @@ export default function Relay() {
           </div>
           <div className={styles["content-section"]}>
             <div className={styles["content-role"]}>
-              <div className={styles["temp-img"]}></div>
+              <div className={styles[""]}></div>
               <div>
                 <h4>My Role</h4>
                 <p>UI/UX Designer</p>
@@ -135,7 +135,7 @@ export default function Relay() {
             </Link>
             <div className={styles["d-flex"]}>
               <div className={styles["box50-border"]}>
-                <div className={styles["temp-img"]}></div>
+                <div className={styles[""]}></div>
                 <div className={styles["box-right"]}>
                   <h4>Problem</h4>
                   <p>
@@ -146,7 +146,7 @@ export default function Relay() {
                 </div>
               </div>
               <div className={styles["box50-border"]}>
-                <div className={styles["temp-img"]}></div>
+                <div className={styles[""]}></div>
                 <div className={styles["box-right"]}>
                   <h4>Solution</h4>
                   <p>
@@ -272,10 +272,7 @@ export default function Relay() {
           </div>
           <div className={styles["section-content"]}>
             <p>
-              In response to the needs of busy parent to schedule carpools for
-              their kids. The design priority are: Home, Create carpool, Trips
-              and Community pages. Tutorials, Landing page, Message and Setting
-              pages are the secondary concerns.
+            The Relay app workflow and user story map were created to visualize the user journey, streamline navigation, and prioritize key features within a tight timeline. These tools ensured intuitive interactions, aligned the team, and optimized development by defining the MVP and identifying dependencies.
             </p>
             <iframe
               className={styles.figma}
