@@ -1,33 +1,107 @@
-.main-container {
-    padding: 0 5%;
-  }
-  /*----Greeting Section Styling----*/
-  .greeting-section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .greeting-big {
-    font-size: 58px;
-    font-weight: var(--font-bold);
-  }
-  
-  .greeting-small {
-    font-size: 32px;
-  }
-  
-  .greeting-bottom {
-    z-index: 1;
-    display: inline-flex !important;
-    align-items: center;
-    gap: 0.5rem;
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 0.5rem;
-    text-decoration: none;
-    color: #000;
-    scroll-behavior: smooth;
-  }
-  
+.nav {
+  z-index: 99999;
+}
+
+.hero {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+}
+
+.hero h1 {
+  width: 100%;
+  color: #7c7c7c;
+  font-size: 15vw;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #0084ff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 1em 2em;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.imgGallery {
+  width: 100vw;
+  padding-top: 100vh;
+}
+
+.imgGalleryContainer {
+  width: 100vw;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img {
+  position: relative;
+  margin-bottom: 1em;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+.img:nth-child(1),
+.img:nth-child(3) {
+  left: 75%;
+}
+
+.img:nth-child(2),
+.img:nth-child(4) {
+  left: 25%;
+}
+
+.img:nth-child(5),
+.img:nth-child(7) {
+  left: 75%;
+}
+
+.img:nth-child(6),
+.img:nth-child(8) {
+  left: 25%;
+}
+
+.img.reorder {
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+}
+
+.img.reorder:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.img.reorder:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(-5deg);
+}
+
+.img.reorder:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(2deg);
+}
+
+.img.reorder:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(-2deg);
+}
