@@ -4,8 +4,8 @@ import React, { useEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Flip from "gsap/Flip";
-import CustomEase from "gsap/CustomEase";
+import { Flip } from "gsap/Flip";
+import { CustomEase } from "gsap/CustomEase";
 import Header from "../../../components/Header";
 import styles from "./Gallery.module.css";
 
