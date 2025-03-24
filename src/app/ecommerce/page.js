@@ -17,7 +17,7 @@ export default function Ecommerce() {
           height={844}
           title="Live Stream Shopping"
           year="2024"
-          subtitle="After Effect | Graphic Design"
+          subtitle="After Effects | Graphic Design"
           overviewTitle="Overview"
           overviewText="This motion graphic, created using Adobe Illustrator and After Effects, highlights the advantages of live stream shopping over traditional online shopping. Featuring custom vector illustrations and smooth animations, the video demonstrates how live shopping enhances engagement, offers exclusive discounts, and provides a seamless, interactive experience. Viewers follow a buyer’s journey from browsing a website to interacting with a live host, making informed purchases, and enjoying a streamlined shopping process."
         />
