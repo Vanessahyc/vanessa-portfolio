@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect } from "react";
-import dynamic from "next/dynamic";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Flip } from "gsap/Flip";
@@ -9,18 +8,15 @@ import { CustomEase } from "gsap/CustomEase";
 import Header from "../../../components/Header";
 import styles from "./Gallery.module.css";
 
-const LocomotiveScroll = dynamic(
-  () => import("locomotive-scroll").then((mod) => mod.default),
-  { ssr: false }
-);
-
 export default function GalleryPage() {
   useEffect(() => {
     let scroller;
 
-    const initAnimations = async () => {
+    async function initAnimations() {
       try {
-        // Wait until the entire page (including images) is loaded
+  
+        const { default: LocomotiveScroll } = await import("locomotive-scroll");
+
         await new Promise((resolve) => {
           if (document.readyState === "complete") {
             resolve();
@@ -29,11 +25,9 @@ export default function GalleryPage() {
           }
         });
 
-        // Register GSAP plugins
         gsap.registerPlugin(ScrollTrigger, Flip, CustomEase);
         CustomEase.create("cubic", "0.83, 0, 0.17, 1");
 
-        // Select the scroll container
         const scrollContainer = document.querySelector(
           "[data-scroll-container]"
         );
@@ -42,14 +36,12 @@ export default function GalleryPage() {
           return;
         }
 
-        // Initialize LocomotiveScroll
         scroller = new LocomotiveScroll({
           el: scrollContainer,
           smooth: true,
         });
-        console.log("scroller:", scroller); // Check if this is a valid instance
+        console.log("scroller instance:", scroller);
 
-        // Select other DOM elements
         const gallery = document.querySelector(
           `.${styles.imgGalleryContainer}`
         );
@@ -101,25 +93,19 @@ export default function GalleryPage() {
               applyRotation();
             },
             onComplete: () => {
-              // Make sure `scroller` is valid
-              if (scroller && scroller.update) {
-                scroller.update();
-              }
+              if (scroller?.update) scroller.update();
             },
           });
         });
       } catch (error) {
         console.error("Animation initialization error:", error);
       }
-    };
+    }
 
     initAnimations();
 
     return () => {
-      // Cleanup LocomotiveScroll on unmount
-      if (scroller) {
-        scroller.destroy();
-      }
+      if (scroller?.destroy) scroller.destroy();
     };
   }, []);
 
